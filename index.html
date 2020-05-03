@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="content-container">
+        <div class="app-title">
+            <h3>Tic Tac toe</h3>
+        </div>
+
+        <div class="game-buttons">
+            <div class="newGame"><input class="button round-corner" type="submit" value="New Game" function="newGame"></div>
+            <div class="playFriend"><input class="button round-corner" type="submit" value="Play with friend" function="playFriend"></div>
+            <div class="playOnline"><input class="button round-corner" type="submit" value="Play Online" function="playOnline"></div>
+        </div>
+
+        <div class="main-container">
+            <div class="game-status">
+                <!-- <div class="versus-status"><span>Player 1</span> VS <span>Player 2</span></div>
+                <div class="winner-status">Winner: Player 1</div> -->
+                    <div class="versus">
+                        <div class="versus-icon"><span>V</span><span>S</span></div>
+                        <div class="left panel">
+                            <span class="score"> 
+                                10
+                            </span>
+                            <span class="name left-player">Player A</span>
+                        </div>
+                        <div class="right panel">
+                            <span class="score"> 10 </span>
+                            <span class="name right-player">myBot</span>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="game-board">
+                <div class="board">
+                    <div class="row">
+                        <div class="cell" data-position='{"x":0,"y":0}'></div>
+                        <div class="cell" data-position='{"x":0,"y":1}'></div>
+                        <div class="cell" data-position='{"x":0,"y":2}'></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell" data-position='{"x":1,"y":0}'></div>
+                        <div class="cell" data-position='{"x":1,"y":1}'></div>
+                        <div class="cell" data-position='{"x":1,"y":2}'></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell" data-position='{"x":2,"y":0}'></div>
+                        <div class="cell" data-position='{"x":2,"y":1}'></div>
+                        <div class="cell" data-position='{"x":2,"y":2}'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="leaderboard">
+                <h3>Leaderboard</h3>
+                <div>
+                    <span>theFrontiers</span><span>Scores</span>
+                </div>
+                <div class="list">
+                    <div><span>Sarad Singh</span><span>12</span></div>
+                    <div><span>John Wick</span><span>14</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                    <div><span>Computer</span><span>18</span></div>
+                </div>
+                <!-- <div>
+                    <input class='joinBoard-btn' type="button" value="Join Board">
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <div class="onready-container absolute">
+        <div class='content'>
+            <h3 class="description">every legend has a name</h3>
+            <div>
+                <div class="name"><input class="input" id='userName' type="text" placeholder="and i am ..."></div>
+                <div class="nameSubmit"><input class="button round-corner" type="button" value="rememberMe" function="setUserName"></div>
+            </div>
+            <div class="close-absolute" ><span function='close-absolute'>X</span></div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
